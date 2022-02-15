@@ -19,7 +19,9 @@ class ButtonWithOutIcon extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 5.0),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          onTab();
+        },
         child: Text(
           text,
           style: TextStyle(color: textColor, fontSize: 20.0),
